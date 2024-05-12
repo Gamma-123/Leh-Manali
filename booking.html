@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="text/css" herf="css/style.css">
+
+  <!-- boxicons link -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    :root {
+    --text-color: #fff;
+    --bg-color: #000; /* Set background color to black */
+    --main-color: #ffa343;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+</style>
+
+
+
+  </head>
+  <body>
+    
+
+     <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">LEH<span>MANALI</span></a>
+
+        <ul class="navbar">
+            <li><a href="whatsnew.html">WHAT'S NEW</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="community.html">COMMUNITY</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="tip.html">TIP</a></li>
+            
+        </ul>
+        <div class="h-right">
+            <a href="#">Follow us</a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+     </header>
+
+     <div class="background">
+        <div class="booking-form">
+            <h2>Travel Booking Form</h2>
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+
+                <label for="destination">Destination:</label>
+                <input type="text" name="destination" id="destination" required>
+
+                <label for="departure_date">Departure Date:</label>
+                <input type="date" name="departure-date" id="departure-date" required>
+
+                <label for="return_date">Return Date:</label>
+                <input type="date" name="return-date" id="return-date" required>
+
+                <button type="submit">Book Now</button>
+                
+            </form>
+        </div>
+     </div>
+
+     <section class="tour">
+        <div class="center-text">
+            <h2>Featured Trips</h2>
+        </div>
+      </section>
+
+     <section class="trip-options">
+        <div class="trip-container">
+        <div class="trip-card">
+            <h3>Leh-Ladakh Expedition</h3>
+            <p>Destination: Leh, Ladakh</p>
+            <p>Duration: 10 days</p>
+            <p>Price: ₹35,650</p>
+            <div class="trip-description">
+                <p>Highlights:</p>
+                <ul>
+                    <li>Scenic landscapes of the Himalayas</li>
+                    <li>Exploration of ancient monasteries</li>
+                    <li>Thrilling adventure activities like river rafting and trekking</li>
+                </ul>
+                <p>Activities:</p>
+                <ul>
+                    <li>Guided tours of Leh and surrounding areas</li>
+                    <li>Trekking to remote villages and high-altitude lakes</li>
+                    <li>Visit to Pangong Lake and Nubra Valley</li>
+                </ul>
+               
+            </div>
+        
+            <button>Book Now</button>
+        </div>
+        </div>
+
+
+        <div class="trip-container">
+        <div class="trip-card">
+            
+            <h3>Manali Adventure</h3>
+            <p>Destination: Manali</p>
+            <p>Duration: 7 days</p>
+            <p>Price: ₹25,300</p>
+            <div class="trip-description">
+                <p>Highlights:</p>
+                <ul>
+                    <li>Exploration of lush green valleys and snow-capped peaks</li>
+                    <li>Exciting outdoor activities like paragliding and skiing</li>
+                    <li>Cultural experiences in local villages and markets</li>
+                </ul>
+                <p>Activities:</p>
+                <ul>
+                    <li>Hiking in the Himalayas</li>
+                    <li>Visit to Rohtang Pass and Solang Valley</li>
+                    <li>White-water rafting on the Beas River</li>
+                </ul>
+               
+            </div>
+        
+            <button>Book Now</button>
+        </div>
+        </div>
+        <!-- Add more trip cards as needed -->
+    </section>
+
+  
+
+
+     
+     
+
+
+     <!-- custom js file link -->
+     <script src="js/script.js">DISCOVER</script>
+     <script>
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+        header.classList.toggle("sticky", window.scrollY > 60);
+    });
+
+    </script>
+
+ 
+     <style>
+        
+     
+        .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+     
+    .logo{
+        font-size: 33px;
+        color: rgb(226, 223, 223);
+        font-weight: 700;
+    }
+
+    span{
+        color: var(--main-color)
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .navbar a{
+        color: rgb(241, 237, 237);
+        font-size: var(--p-font);
+        font-weight: 500;
+        margin: 15px 22px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+
+    .h-right{
+        display: flex;
+        align-items: center;
+    }
+
+    .h-right a:first-child{
+        color: rgb(239, 232, 232);
+        font-size: var(--p-font);
+        margin-right: 20px;
+        margin-left: auto; /* Adjust margin to push "Follow us" link to the right */
+    }
+
+    .h-right a{
+        vertical-align: middle;
+        font-size: 10px;
+        color: var(--text-color);
+        margin-right: 18px;
+        margin-left: 5px;
+        transition: all .50s ease;
+        
+    }
+
+    .h-right a:hover{
+        color: var(--main-color);
+        transform: translate(-3px);
+    }
+
+    #menu-icon{
+        color: rgb(239, 235, 235);
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+        display: none;
+    }
+
+    section{
+        padding: 70px 17% 60px;
+    }
+
+    header.sticky{
+        padding: 8px 17%;
+        background: transparent;
+        backdrop-filter: blur(35px);
+    }
+
+    /* Style for header */
+
+
+/* Style for main content */
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+body,html{
+    height: 100%;
+    margin: 0;
+    
+}
+
+.background{
+    background-image: url(leh/leh6.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-form{
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.booking-form h2{
+    text-align: center;
+}
+
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking-form button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: var(--bg-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+    
+}
+
+.booking-form button:hover{
+    transform: translateX(10px);
+        border: 2px solid var(--text-color);
+        background: transparent;
+        color: var(--text-color);
+}
+
+.trip-options {
+    padding: 40px;
+    display: flex; /* Add flex display */
+    justify-content: space-between; /* Arrange items with space between */
+    
+    
+}
+
+.trip-options h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.trip-container {
+    flex: 1; /* Each container takes up equal space */
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.trip-card {
+    background-color: var(--main-color);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Remove margin-right from last trip container to prevent extra spacing */
+.trip-container:last-child {
+    margin-right: 0;
+}
+
+.trip-card h3 {
+    color: var(--bg-color);
+    font-size: 22px;
+        font-weight: 600;
+       
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.center-text h2 {
+    font-size: var(--h2-font);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.trip-card p {
+    margin-bottom: 10px;
+}
+
+.trip-description {
+    margin-top: 20px;
+}
+
+.trip-description p {
+    margin-bottom: 10px;
+    font-size: var(--p-font);
+        font-weight: 500;
+        line-height: 10px;
+        color: #ffffffab;
+        margin-bottom: 35px;
+    }
+
+
+.trip-description ul {
+    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-size: var(--p-font);
+        font-weight: 500;
+        line-height: 20px;
+        color: white;
+        margin-bottom: 35px;
+}
+
+.trip-description ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.trip-card button {
+    padding: 10px 20px;
+    background-color: #080808;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.trip-card button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+     </style>

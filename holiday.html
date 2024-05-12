@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Website</title>
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- boxicons link -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        border: none;
+        outline: none;
+        scroll-behavior: smooth;
+        font-family: "Open Sans", sans-serif;
+    }
+
+    :root {
+    --text-color: #fff;
+    --bg-color: #000; /* Set background color to black */
+    --main-color: #ffa343;
+
+    --h1-font: 6rem;
+    --h2-font: 3rem;
+    --p-font: 1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+
+.icon::before {
+    content: "\e900"; /* Unicode character for the desired icon */
+    font-family: 'Boxicons'; /* Specify the font family */
+}
+</style>
+
+
+
+  </head>
+  <body>
+    
+
+     <!-- header design -->
+     <header class="header">
+        <a href="#" class="logo">LEH<span>MANALI</span></a>
+
+        <ul class="navbar">
+            <li><a href="whatsnew.html">WHAT'S NEW</a></li>
+            <li><a href="explore.html">EXPLORE</a></li>
+            <li><a href="community.html">COMMUNITY</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="tip.html">TIP</a></li>
+            
+        </ul>
+        <div class="h-right">
+            <a href="#">Follow us</a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+     </header>
+
+      <!-- home section design -->
+      <section class="home">
+        <div class="home-text">
+            <h5>Let's</h5>
+            <h1>Discover the <br>leh-Manali routes</h1>
+            
+            <a href="booking.html" class="btn">Book a Trip</a>
+        </div>
+      </section>
+
+      
+  <section class="tour-info">
+    <div class="info-item">
+        <div class="info-container">
+            <div class="icons">
+                <a href="#"><i class="ri-map-pin-line"></i></a>
+            </div>
+            <h3>Tour Duration</h3>
+            <p>8 Days</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <div class="info-container">
+            <div class="icons">
+                <a href="#"><i class="ri-time-line"></i></a>
+            </div>
+            <h3>Starting Location</h3>
+            <p>Manali</p>
+        </div>
+    </div>
+    <div class="info-item">
+        <div class="info-container">
+            <div class="icons">
+                <a href="#"><i class="ri-price-tag-line"></i></a>
+            </div>
+            <h3>Price Per Person</h3>
+            <p>22999</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- text section design -->
+<section class="text">
+    <div class="text-content">
+      <p>Embark on an unforgettable journey through the majestic landscapes <br>
+        of the Leh-Manali highway. Explore breathtaking vistas, immerse <br>
+        yourself in local culture, and experience the thrill of high-altitude <br>
+        adventure. From serene lakes to towering mountain passes, discover the <br>
+        beauty and wonder of this iconic route.</p>
+    </div>
+  </section>
+
+  <!-- tour section design -->
+  <section class="tour">
+    <div class="center-text">
+        <h2>Package Details</h2>
+    </div>
+  </section>
+
+  <div class="price-list">
+    <div class="price-item">
+      <span>OWN BIKES / PILLION</span>
+      <span class="price">Rs 23000</span>
+    </div>
+    <hr>
+    <div class="price-item">
+      <span>SINGLE RIDER ON RENTED BIKE</span>
+      <span class="price">Rs 41000</span>
+    </div>
+    <hr>
+    <div class="price-item">
+      <span>DUAL RIDER ON A RENTED BIKE</span>
+      <span class="price">Rs 31000</span>
+    </div>
+    <hr>
+    <div class="price-item">
+      <span>SUV</span>
+      <span class="price">Rs 32000</span>
+    </div>
+  </div>
+
+  <!-- tour section design -->
+  <section class="tour">
+    <div class="center-text">
+        <h2>Adventure Itinerary</h2>
+    </div>
+  </section>
+
+  <!-- Adventure Itinerary Section -->
+<section class="adventure-itinerary" id="itinerarySection">
+    <div class="schedule-box">
+        <div class="topics">
+            <a href="#trip-schedule" class="topic-link active" id="schedule-link">Trip Schedule</a>
+            <a href="#trip-inclusions" class="topic-link" id="inclusions-link">Trip Inclusions</a>
+            <a href="#trip-exclusions" class="topic-link">Trip Exclusions</a>
+            <a href="#cancellation" class="topic-link">Cancellation</a>
+            <a href="#faqs" class="topic-link">FAQs</a>
+        </div>
+    </div>
+  
+    <div class="itinerary-table" id="schedule-content">
+        <div class="day">
+            <div class="day-number">Day 1</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Arrive in Manali</h3>
+                <p>We Arrive Manali In Morning, Check In Hotel And We Relax Today<br>
+                    To Let Our Body Acclimatize. Explore Manali Local Sight Seeing.<br>
+                    Our Tour Captain Will Give You A Little Brief About The Ride,<br>
+                    Itinerary, Bike Allocation Etc. Evening At Leisure. Explore &<br>
+                    Enjoy Overnight Stay In Hotel With Dinner.</p>
+            </div>
+        </div>
+
+        <div class="day">
+            <div class="day-number">Day 2</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Manali to Jispa</h3>
+                <p>Your Long-Awaited Ride To Ladakh Finally Begins. Pack Your Bags<br>
+                    And Get Set For A Thrilling Ride. On The Way, You Will Pass Atal<br>
+                    Tunnel, Tandi (Last Petrol Pump Before Upshi) And Keylong.<br>
+                    Once You Reach Jipsa, An Overnight Stay Will Be Provided at camps.</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each day -->
+        <div class="day">
+            <div class="day-number">Day 3</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Jispa to Padum via Shango La Pass</h3>
+                <p>After breakfast, you start the tour towards Zanskar on the just newly<br>
+                    opened road. It’s a bit hard but with the best landscape. It takes<br>
+                    time to cross Shingo la pass and pictures with grand mountain<br>
+                    Gumbo Ranjan(Mahakal) and river crossing, etc. After a meal<br>
+                    from the campsite, you ride to Padum. Tonight you stay at a nice<br>
+                    Home stay or Tents.</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each day -->
+        <div class="day">
+            <div class="day-number">Day 4</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Padum – Kargil</h3>
+                <p>This is a bit of a hard day. This route was just opened in August<br>
+                    2020 that connect you to Leh –Srinagar highway with off road<br>
+                    short cut. Around 240 kilometers’ ride will be covered in daylight.<br>
+                    At night, stay at Hotels.</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each day -->
+        <div class="day">
+            <div class="day-number">Day 5</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Kargil to Leh</h3>
+                <p>This is a bit of a hard day. This route was just opened in August<br>
+                    short cut. Around 240 kilometers’ ride will be covered in daylight.<br>
+                    At night, stay at Hotels.</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each day -->
+        <div class="day">
+            <div class="day-number">Day 6</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Leh to Nubra Valley</h3>
+                <p>This Section Of The Srinagar To Manali Motorbike Expedition<br>
+                    Involves Undertaking A Scenic And Thrilling Road Journey<br>
+                    To The Nubra Valley. The Road To The Valley Will Take<br>
+                    You Across What Is Claimed To Be The Highest Motorable<br>
+                    Road On Earth– Khardung La. Upon Reaching The Nubra<br>
+                    Valley Which Is Located On The BanksOf The Nubra<br>
+                    River, Head To The Hotel For A Relaxing Overnight Stay.</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each day -->
+        <div class="day">
+            <div class="day-number">Day 7</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+                
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Nubra Valley to Pangong Lake</h3>
+                <p>Today Morning, You Will Leave Behind The Stark Region And<br>
+                    Move Toward The Pristine Pangong Lake. En route You Will Pass<br>
+                    Through Shyok Village, Which Has Been Recently Open For The Tourists.<br>
+                    On Reaching The Shores Of This Enchanting Water-body,<br>
+                    Take In Its Beauty And Tranquility, And Capture Photos Of<br>
+                    The Realm. Later, Transfer To The Campsite For A Warming Bonfire<br>
+                    And A Peaceful Overnight Stay In The Lap Of Nature.</p>
+            </div>
+        </div>
+
+        <!-- Repeat the above structure for each day -->
+        <div class="day">
+            <div class="day-number">Day 8</div>
+            <div class="day-info">
+                <div class="location-icon"><a href="ri-map-pin-line"></a></div>
+               
+                <div class="expand-btn">-</div>
+            </div>
+            <div class="description">
+                <h3>Pangong to Leh</h3>
+                <p>Open your eyes to the scenic view of the Pangong Tso. After<br>
+                    Having Breakfast We Will Leave For Leh. Today We Will Cross<br>
+                    The Second Highest Pass Of The World, Chang La (17,590 ft).<br>
+                    This Pass Is Considered Amongst The Toughest Passes. This<br>
+                    Pass Connects Leh With The Changthang Plateau. Before<br>
+                    Climbing The Mighty Pass We Will See A Small Lake, Known<br>
+                    As Tsoltak. After Crossing The Pass We Will Descend Down<br>
+                    To Shakti And Will Continue The Remaining Journey On The<br>
+                    Manali-Leh Highway. We will Reach Leh By Early Evening<br>
+                    And Enjoy The City And Spend The Night Over There.</p>
+            </div>
+        </div>
+    </div>
+  
+    <div class="itinerary-table" id="inclusions-content" style="display: none;">
+        <div class="inclusions">
+        <h3>Trip Inclusions:</h3>
+        <ul>
+            <li>Accommodation In Hotels / Camps / Guest Houses On Double / Triple Sharing From Day 01 To 08</li>
+            <li>Meals Breakfast And Dinner. Dinner On Day 01 To Breakfast On Day 09</li>
+            <li>Volvo Tickets From Delhi To Manali</li>
+            <li>Services Of Experienced Trip Leader And Motorbike Mechanic</li>
+            <li>First Aid Kit And Oxygen Cylinder</li>
+            <li>Inner Line Permit/Manali Green Tribunal Permit</li>
+            <li>Facility To Carry Luggage In A Vehicle Restricted To 1 Rucksack / Duffle Bag Of 60 Liters Per <br> Motorbike Royal Enfield 350cc Motorbike</li>
+            <li>Helmet For Both Rider And Pillion</li>
+            <li>Motorbike Fuel For The Complete Trip As Per The Itinerary</li>
+            <li>Extra Fuel For Back Up</li>
+            <li>Transport In An Muv Like Tempo Traveller / Toyota Innova / Mahindra Xylo / Mahindra Scorpio From Day 02 To Day 08 As Per The Group Size.</li>
+            <li>Participation Certificate For Riding Up To Highest Motorable Road Of The World Khardungla Pass And A Goody Bag From Backpackclan Team</li>
+            <li>Bon Fire Wherever Possible</li>
+            <li>Half Day Sightseeing In Leh Ladakh On Day 05</li>
+            <li>Backup Vehicle</li>
+        </ul>
+    </div>
+    <div class="itinerary-table" id="exclusions-content" style="display: none;">
+        <div class="exclusions">
+            <h3>Trip Exclusions:</h3>
+            <ul>
+                <li>Personal Expenses Like Telephone, Laundry, Tips And Table Drinks Etc.</li>
+                <li>Any Type Of Insurance - Medical, Accidental, Theft</li>
+                <li>Any Airfare / Rail Fare Other Than What In Mentioned In “Inclusions”</li>
+                <li>Airport, Railway Station Or Bus Stop Pick Up Or Drop</li>
+                <li>Cost Of Any Spare Part Which Will Be Used Due To The Accidental Damage Incurred When The Motorbike Is In Rider’s Possession.</li>
+                <li>Cost Incurred To Transfer Or Tow The Motorbike In Case It Is Dropped On The Way.</li>
+                <li>Vehicle Servicing Or Maintenance Cost</li>
+                <li>Any Lunch And Other Meals Not Mentioned In Package Inclusions</li>
+                <li>Security Deposit Per Motorbike Of Rs. 5,000/ . As Per The Deposit Policy (This Is Refundable At The End Of The Trip If There Is No Damage Or Spare Parts Used.)</li>
+                <li>Parking And Monument Entry Fees During Sightseeing.</li>
+                <li>Any Cost Incurred Due To Extension, Change Of Itinerary Due To Natural Calamities, Road, Blocks, Vehicle Breakdown, Union Issues And Factors Beyond Our Control</li>
+                <li>Additional Accommodation / Food Cost Incurred Due To Any Delay</li>
+                <li>Riding Gears For Rider Which Can Be Hired (Knee Pads And Elbow Guards Rs. 750/ For The Whole Trip)</li>
+                <li>5% Gst</li>
+                <li>Anything That Is Not Mentioned In The Inclusion Sections</li>
+            </ul>
+        </div>
+    </div>
+    
+  
+    <div class="itinerary-table" id="cancellation-content" style="display: none;">
+        <div class="cancellation">
+            <h3>Cancellation Policy:</h3>
+            <p>Cancellation charge will be accepted from the booking dates</p>
+            <ul>
+                <li>Before 30 days – communication charges of Rs. 2000/- per person.</li>
+                <li>30 -15 Days prior to departure 25% on total package cost.</li>
+                <li>14 -07 Days prior to departure 50% on total package cost.</li>
+                <li>07- 03 Days prior to departure 75% on total package cost.</li>
+                <li>Within 03 Days/No show Full amount / non-refundable.</li>
+            </ul>
+            <p>This is our cancellation rules but we will give our best possible effort to minimize the cancellation charges.</p>
+        </div>
+        <div class="amendment">
+            <h3>Amendment Terms:</h3>
+            <p>Amendment of booked tour will be treated as Cancellation. However, minor amendments can be made on the payment of a communication charge.</p>
+        </div>
+        <div class="payment-terms">
+            <h3>Payment Terms:</h3>
+            <ul>
+                <li>Booking amount – 100% Advance for Ticket booking.</li>
+                <li>Booking amount – 25% of total package at the time of booking.</li>
+                <li>Balance payment of 75% of total package cost to be clear before 20 days prior to the departure date.</li>
+                <li>Those booking are made on short notice; all payment must be clear within 2 to 3 days.</li>
+                <li>Those booking are made on spot check-in; all payment must be made at the time of booking only.</li>
+            </ul>
+        </div>
+    </div>
+    <div id="cancellation" class="content">
+      <!-- Cancellation Content Goes Here -->
+    </div>
+  
+    <div id="faqs" class="content">
+      <!-- FAQs Content Goes Here -->
+    </div>
+  </section>
+
+   <!-- culture section design -->
+   <section class="Culture">
+    <div class="Culture-text">
+        <h5>Explore Every Turn and Terrain</h5>
+        <h2>Discover the Route with our Interactive Spatial Map</h2>
+        <p>Embark on a virtual journey through the breathtaking landscapes and cultural wonders of the Leh to Manali route. Our interactive spatial map offers an immersive experience, allowing you to delve into the intricacies of each location, from towering mountain passes to serene valleys. Navigate through the map, uncover hidden gems, and plan your adventure with confidence, ensuring every mile of your journey is filled with exploration and discovery.</p>
+           
+    </div>
+    <div class="Culture-img">
+        <img src="leh/holiday/route.png" alt="">
+
+    </div>
+  </section>
+
+  <!-- nfooter section design -->
+  <section class="footer">
+    <div class="footer-box">
+        <h3>Services</h3>
+        <a href="">Tour Packages</a>
+        <a href="">Guided Tours</a>
+        <a href="">Transportation Services</a>
+        <a href="">Equipment Rental</a>
+    </div>
+
+    <div class="footer-box">
+        <h3>About</h3>
+        <a href="">Our Story</a>
+        <a href="">Values</a>
+        <a href="">Achievements:</a>
+        <a href="">EPartnerships & Collaborations</a>
+    </div>
+
+    <div class="footer-box">
+        <h3>Customer Care</h3>
+        <a href="">Contact</a>
+        <a href="">Privacy Policy</a>
+        
+    </div>
+    
+    <div class="footer-box">
+        <h3>Social</h3>
+        <div class="social">
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+        </div>
+       
+        
+    </div>
+  </section>
+
+
+ 
+        
+     <!-- custom js file link -->
+<script src="js/script.js"></script>
+<script>
+    const header = document.querySelector("header");
+
+    window.addEventListener("scroll", function() {
+        header.classList.toggle("sticky", window.scrollY > 60);
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all topic links
+        const topicLinks = document.querySelectorAll('.topics .topic-link');
+
+        // Add click event listener to each topic link
+        topicLinks.forEach(topicLink => {
+            topicLink.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Get the target content section
+                const targetId = this.getAttribute('href').substring(1); // Remove '#' from href
+                const targetContent = document.getElementById(targetId);
+
+                // Toggle the active class for the target content section
+                targetContent.classList.toggle('active');
+
+                // Hide other content sections
+                const otherContents = document.querySelectorAll('.content:not(#' + targetId + ')');
+                otherContents.forEach(content => {
+                    content.classList.remove('active');
+                });
+            });
+        });
+    });
+
+     
+</script>
+
+
+<script>
+    // JavaScript to toggle the visibility of the description and change the expand button icon
+    const expandButtons = document.querySelectorAll('.expand-btn');
+  
+    expandButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const description = button.parentElement.nextElementSibling;
+        description.classList.toggle('active');
+        button.textContent = description.classList.contains('active') ? '+' : '-';
+      });
+    });
+  </script>
+
+  
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM fully loaded and parsed');
+
+    // Event listener for trip schedule button
+    document.getElementById('schedule-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('schedule-content').style.display = 'block';
+        document.getElementById('inclusions-content').style.display = 'none'; // Hide inclusions content
+        document.getElementById('exclusions-content').style.display = 'none'; // Hide exclusions content
+        this.classList.add('active'); // Add active class to schedule button
+        document.getElementById('inclusions-link').classList.remove('active'); // Remove active class from inclusions button
+        document.getElementById('exclusions-link').classList.remove('active'); // Remove active class from exclusions button
+    });
+
+    // Event listener for trip inclusions button
+    document.getElementById('inclusions-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('schedule-content').style.display = 'none'; // Hide schedule content
+        document.getElementById('inclusions-content').style.display = 'block';
+        document.getElementById('exclusions-content').style.display = 'none'; // Hide exclusions content
+        this.classList.add('active'); // Add active class to inclusions button
+        document.getElementById('schedule-link').classList.remove('active'); // Remove active class from schedule button
+        document.getElementById('exclusions-link').classList.remove('active'); // Remove active class from exclusions button
+    });
+
+    // Event listener for trip exclusions button (if available)
+    document.getElementById('exclusions-link').addEventListener('click', function(event) {
+        event.preventDefault();
+        document.getElementById('schedule-content').style.display = 'none'; // Hide schedule content
+        document.getElementById('inclusions-content').style.display = 'none'; // Hide inclusions content
+        document.getElementById('exclusions-content').style.display = 'block';
+        this.classList.add('active'); // Add active class to exclusions button
+        document.getElementById('schedule-link').classList.remove('active'); // Remove active class from schedule button
+        document.getElementById('inclusions-link').classList.remove('active'); // Remove active class from inclusions button
+    });
+});
+
+function selectOption(option) {
+  // Remove selected class from all options
+  const options = document.querySelectorAll('.option');
+  options.forEach((opt) => {
+    opt.classList.remove('selected');
+  });
+
+  // Add selected class to clicked option
+  option.classList.add('selected');
+}
+
+
+
+
+
+
+
+</script>
+
+ 
+     <style>
+        
+     
+        .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    background: transparent;
+    padding: 27px 17%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .50s ease;
+}
+     
+    .logo{
+        font-size: 33px;
+        color: rgb(226, 223, 223);
+        font-weight: 700;
+    }
+
+    span{
+        color: var(--main-color)
+    }
+
+    .navbar{
+        display: flex;
+    }
+
+    .navbar a{
+        color: rgb(241, 237, 237);
+        font-size: var(--p-font);
+        font-weight: 500;
+        margin: 15px 22px;
+        transition: all .50s ease;
+    }
+
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+
+    .h-right{
+        display: flex;
+        align-items: center;
+    }
+
+    .h-right a:first-child{
+        color: rgb(239, 232, 232);
+        font-size: var(--p-font);
+        margin-right: 20px;
+        margin-left: auto; /* Adjust margin to push "Follow us" link to the right */
+    }
+
+    .h-right a{
+        vertical-align: middle;
+        font-size: 10px;
+        color: var(--text-color);
+        margin-right: 18px;
+        margin-left: 5px;
+        transition: all .50s ease;
+        
+    }
+
+    .h-right a:hover{
+        color: var(--main-color);
+        transform: translate(-3px);
+    }
+
+    #menu-icon{
+        color: rgb(239, 235, 235);
+        font-size: 30px;
+        cursor: pointer;
+        z-index: 10001;
+        display: none;
+    }
+
+    section{
+        padding: 70px 17% 60px;
+    }
+
+    .home{
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-image: url(leh/holiday/manali.avif);
+        background-size: cover;
+        background-position: bottom center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .home-text h5{
+        margin-top: 50px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        color: var(--bg-color);
+
+    }
+    .home-text h1{
+        font-size: var(--h1-font);
+        font-weight: 600;
+        line-height: 1;
+        margin-bottom: 20px;
+        color: var(--bg-color);
+    }
+   
+
+    .btn{
+       display: inline-block;
+       padding: 13px 40px;
+       background: var(--main-color);
+       color: var(--bg-color);
+       font-size: 15px;
+       font-weight: 600; 
+       border: 2px solid transparent;
+       border-radius: 5px;
+       transition: all .50s ease;
+       cursor: pointer;
+    }
+
+    .btn:hover{
+        transform: translateX(10px);
+        border: 2px solid var(--text-color);
+        background: transparent;
+        color: var(--text-color);
+    }
+
+    header.sticky{
+        padding: 8px 17%;
+        background: transparent;
+        backdrop-filter: blur(35px);
+    }
+
+    .text {
+  text-align: center;
+}
+
+.text-content p{
+        font-size: var(--p-font);
+        font-weight: 500;
+        line-height: 25px;
+        color: #ffffffab;
+        margin-bottom: 35px;
+        border: 1px solid #ffa343; /* Add a border with desired color */
+    padding: 20px; /* Add padding to create space around the content */
+    margin-bottom: 20px; /* Add margin to separate each item */
+    }
+
+    .tour-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-item {
+    text-align: center;
+}
+
+.icon {
+    font-size: 24px; /* Set the font size of the icon */
+    color: #ffa343; /* Set the color of the icon */
+    margin-right: 10px; /* Add some margin to the right of the icon */
+}
+
+.ri-map-pin-line, .ri-time-line, .ri-price-tag-line{
+    font-size: 30px; /* Set the font size of the icons */
+    color: #ffa343; /* Set the color of the icons */
+    margin-right: 10px; /* Add some margin to the right of the icons */
+}
+
+.center-text{
+        text-align: center;
+    }
+    
+    .center-text h2{
+        font-size: var(--h2-font);
+        font-weight: 800;
+    }
+
+.tour-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+        align-items: center;
+        gap: 3rem;
+        margin-top: 5rem;
+    }
+    .price-list {
+      max-width: 750px;
+      margin: 40px auto;
+      background-color: #000000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(77, 75, 75, 0.1);
+      padding: 20px;
+    }
+
+    .price-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .price-item:last-child {
+      border-bottom: none;
+    }
+
+    .price-item span {
+      flex: 1;
+      text-align: center;
+      padding: 0 10px;
+    }
+
+    .price-item .price {
+      flex: 1;
+      text-align: right;
+    }
+
+    .price-item hr {
+      width: 100%;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+
+    /* Styles for adventure itinerary section */
+.adventure-itinerary {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.itinerary-table {
+    margin-top: 30px;
+}
+
+.adventure-itinerary h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.topics a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.topics a:hover {
+  transform: translateX(5px);
+  border: 2px solid var(--text-color);
+  background: transparent;
+  color: var(--text-color);
+}
+.day {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.day-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f9fcff;
+    margin-bottom: 10px;
+}
+
+.location-icon {
+    background-image: url('location-icon.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.day-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.expand-btn {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.description {
+    padding-left: 60px;
+    display: none;
+  }
+  .description.active {
+    display: block;
+  }
+
+  .description h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f6f7f9;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+  }
+
+  .description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+  }
+
+
+
+.itinerary-table {
+    margin-top: 30px;
+}
+
+.day {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.day-number {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.location-icon {
+    background-image: url('location-icon.png');
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.day-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.expand-btn {
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.description {
+    padding-left: 60px; /* Adjust this value as needed */
+    display: none;
+}
+
+.description h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.description {
+    padding-left: 60px; /* Adjust this value as needed */
+    display: none;
+}
+
+.description.active {
+    display: block;
+}
+
+.itinerary-table.active {
+  display: block;
+}
+
+.day-number,
+.day h3 {
+    color: white;
+}
+
+
+
+
+.inclusions {
+    margin-top: 30px;
+}
+
+.inclusions h3 {
+    font-size: var(--h2-font);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 25px;
+}
+
+.inclusions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.inclusions li {
+    font-size: var(--p-font);
+        font-weight: 100;
+        line-height: 23px;
+        color: #ffffffab;
+        margin-bottom: 25px;
+}
+
+.inclusions li::before {
+    content: "-";
+    margin-right: 5px;
+    color: white; 
+}
+
+.exclusions {
+    margin-top: 30px;
+}
+
+.exclusions h3 {
+    font-size: 20px;
+    color: yellow; /* Change color to yellow */
+}
+
+.exclusions ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.exclusions li {
+    margin-bottom: 10px;
+}
+
+.exclusions li::before {
+    content: "-";
+    margin-right: 5px;
+    color: yellow; /* Change color to yellow */
+}
+
+.container {
+    padding: 2rem;
+}
+
+.Culture{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 9rem;
+    }
+
+    .Culture-img img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .Culture-text h5{
+        font-size: 19px;
+        font-weight: 400;
+        color: var(--main-color);
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 20px;
+    }
+
+    .Culture-text h2{
+        font-size: var(--h2-font);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+
+    .Culture-text p{
+        font-size: var(--p-font);
+        font-weight: 500;
+        line-height: 30px;
+        color: #121111ab;
+        margin-bottom: 35px;
+    }
+
+    .center-text{
+        text-align: center;
+    }
+    
+    .center-text h2{
+        font-size: var(--h2-font);
+        font-weight: 800;
+    }
+
+    .footer{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+        gap: 2rem;
+    }
+
+    .footer-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-box h3{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .footer-box a{
+        color: #979797;
+        margin-bottom: 0.8rem;
+        transition: all .50s ease;
+    }
+
+    .footer-box a:hover{
+        transform: translate(-5px);
+        color: var(--text-color);
+    }
+
+    .social a{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        width: 45px;
+        background: #202020;
+        color: var(--text-color);
+        font-size: 20px;
+        border-radius: 50%;
+        margin-right: 8px;
+        transition: transform 0.6s;
+    }
+
+    .social a:hover{
+        background: var(--main-color);
+        color: var(--bg-color);
+        transform: translate(-4px);
+    }
+    
+
+
+
+
+   
+     </style>
